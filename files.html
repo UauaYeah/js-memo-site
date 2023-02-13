@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://files.ikaclient.com/ -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>files</title>
+    <script>
+        function sort1() {
+            var table = document.getElementById("my-table");
+            var rows = table.getElementsByTagName("tr");
+            var rowArray = Array.prototype.slice.call(rows, 0);
+
+            rowArray.sort(function (a, b) {
+                var A = a.getElementsByTagName("td")[0].textContent.toLowerCase();
+                var B = b.getElementsByTagName("td")[0].textContent.toLowerCase();
+                if (A < B) {
+                    return -1;
+                } else if (A > B) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            });
+
+            for (var i = 0; i < rowArray.length; i++) {
+                table.appendChild(rowArray[i]);
+            }
+        }
+        window.onload = function () {
+            sort1();
+        }
+
+        function norinori() {
+            if (location.hash === "#norinori") {
+                document.getElementById("nori").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066835480068505742/NoriNori_chopper.mp4";
+                document.getElementById("nori").style.display = "block";
+            } else if (location.hash === "#norinoriAudio") {
+                document.getElementById("noriA").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066835479560990840/NoriNori_chopper.mp3";
+                document.getElementById("noriA").style.display = "block";
+            } else if (location.hash === "#takegatukawareteimasu") {
+                document.getElementById("take").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066843393189228674/Nwarm_cm_gyaku.mp4";
+                document.getElementById("take").style.display = "block";
+            } else if (location.hash === "#daily") {
+                document.getElementById("d").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1067028699817443459/daily.mp4";
+                document.getElementById("d").style.display = "block";
+            }
+        }
+
+        function reset() {
+            if (location.hash !== "") {
+                location.hash == ""
+            }
+        }
+
+        window.onhashchange = function () {
+            if (location.hash === "#norinori") {
+                document.getElementById("nori").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066835480068505742/NoriNori_chopper.mp4";
+                document.getElementById("nori").style.display = "block";
+            } else if (location.hash === "#video2") {
+                document.getElementById("myVideo").src = "video2.mp4";
+            } else if (location.hash === "#video3") {
+                document.getElementById("myVideo").src = "video3.mp4";
+            }
+        }
+
+    </script>
+</head>
+
+<body style="background: rgb(15, 15, 15);">
+    <div class="main">
+        <div class="cont">
+
+            <form>
+                <input type="text" id="search-input" placeholder="Search" oninput="ser()" class="searchInput">
+            </form>
+
+            <table id="my-table">
+                <tbody>
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+            </tbody><tr>
+                    <td><a href="https://cdn.discordapp.com/attachments/1071611605860745370/1074647797162324008/index.js">
+                            gomi bot
+                        </a>
+                        <span>
+                            1kb
+                        </span>
+                    </td>
+                </tr>
+        </div>
+    </div>
+
+
+
+
+<style>
+    .main {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cont {
+        position: relative;
+    }
+
+    table,
+    input {
+        position: absolute;
+        height: 0px;
+        display: inline-block;
+        color: #FFF;
+        height: 10px;
+        font-family: MyFont;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+
+    td a {
+        display: block;
+        min-width: 290px;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    td span {
+        display: inline-block;
+        margin-left: auto;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: row;
+    }
+
+    table {
+        min-width: 400px;
+        margin-top: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top: 2px solid #FFF;
+        border-radius: 0px;
+        border-bottom-width: 1cm;
+    }
+
+    td {
+        display: flex;
+        flex-direction: row;
+        min-width: 400px;
+        white-space: nowrap;
+        border-bottom: 2px solid #FFF;
+        border-radius: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .searchInput {
+        margin-top: 80px;
+        display: flex;
+        width: 170px;
+        height: 35px;
+        background: rgb(50, 50, 50);
+        border-color: #FFF;
+        border-style: solid;
+        box-shadow: 1px 1px 1px rgb(50, 50, 50);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    td:hover {
+        animation-name: tdh;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .hit {
+        animation: move 0.4s ease-in-out;
+    }
+
+    @keyframes move {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+
+        }
+    }
+
+    @keyframes tdh {
+        from {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        to {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    @font-face {
+        font-family: 'MyFont';
+        src: url("Corporate-Logo-Rounded\ copy.ttf") format("truetype");
+    }
+
+    div {
+        font-family: MyFont;
+    }
+</style>
+
+<script>
+    function ser() {
+        var searchValue = document.getElementById("search-input").value;
+
+        var rows = document.getElementById("my-table").getElementsByTagName("tr");
+
+        for (var i = 0; i < rows.length; i++) {
+            var firstCell = rows[i].getElementsByTagName("a")[0];
+
+            if (firstCell.innerHTML.toLowerCase().indexOf(searchValue.toLowerCase()) > -1) {
+                rows[i].classList.add("hit");
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+                rows[i].classList.remove("hit");
+            }
+        }
+    }
+
+</script>
+</body></html>
