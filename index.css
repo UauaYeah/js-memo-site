@@ -8,7 +8,7 @@ body {
 }
 
 @font-face {
-    src("https://cdn.discordapp.com/attachments/1037041333006782554/1075042349702467654/ggsans-Normal.ttf");
+    src：url("gg.ttf");
     font-family: 'gg';
 }
 
