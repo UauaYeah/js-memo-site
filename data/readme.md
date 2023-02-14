@@ -5,7 +5,8 @@ memos.jsonに記事一覧を書きます。
 ```json
 [{
     "title":"テスト記事",
-    "name": "test.md"
+    "name": "test.md",
+    "genre": "テスト"
 }]
 ```
 このように書いてください。
@@ -13,8 +14,9 @@ memos.jsonは配列です
 中身はObjectで、
 titleが記事の名前
 nameがファイルパスです
+genreはジャンルです（任意）
 この例だと、
 タイトルが テスト記事
 ファイルパスが test.md
 になります。
-記事はmemosの中に置けよゴミ
+記事はmemosの中に置けよゴミ。

@@ -1,6 +1,7 @@
 [
     {
         "title": "テスト記事",
-        "name": "test.md"
+        "name": "test.md",
+        "genre": "テスト"
     }
 ]
