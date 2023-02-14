@@ -16,5 +16,10 @@
         "title": "テスト記事4",
         "name": "test4.md",
         "genre": "テストジャンル"
+    },
+    {
+        "title": "開発者",
+        "name": "developers.md",
+        "genre": "開発者一覧"
     }
 ]
