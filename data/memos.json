@@ -1,7 +1,20 @@
 [
     {
-        "title": "テスト記事",
-        "name": "test.md",
-        "genre": "テスト"
+        "title": "テスト記事1",
+        "name": "test.md"
+    },
+    {
+        "title": "テスト記事2",
+        "name": "test2.md"
+    },
+    {
+        "title": "テスト記事3",
+        "name": "test3.md",
+        "genre": "テストジャンル"
+    },
+    {
+        "title": "テスト記事4",
+        "name": "test4.md",
+        "genre": "テストジャンル"
     }
 ]

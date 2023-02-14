@@ -57,6 +57,11 @@ body {
     font-weight: bold;
 }
 
+.selected {
+    background-color: #42464d;
+    color: #fff;
+}
+
 .genre {
     margin-left: 20px;
     padding-top: -10px;

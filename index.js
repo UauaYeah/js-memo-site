@@ -2,6 +2,7 @@
     let menulist = $("#menulist");
     let genres = {};
     let content = $("#content");
+    let selected;
     //一覧読み込み
     $.ajax("data/memos.json").done((memos) => {
         memos.forEach(memo => {
@@ -9,6 +10,10 @@
             elem.addClass("menucontent");
             elem.append("<i>＃</i>");
             elem.on("click", () => {
+                if (selected)
+                    selected.removeClass("selected");
+                elem.addClass("selected");
+                selected = elem;
                 loadContent(memo.name);
             })
             let p = $("<p>");
