@@ -4,6 +4,12 @@ body {
     color: #fff;
     height: 100%;
     margin: 0;
+    font-family: "gg";
+}
+
+@font-face {
+    src("https://cdn.discordapp.com/attachments/1037041333006782554/1075042349702467654/ggsans-Normal.ttf");
+    font-family: 'gg';
 }
 
 .container {
