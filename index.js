@@ -1,12 +1,16 @@
-(function () {
+(async function () {
     let menulist = $("#menulist");
     let genres = {};
+    let content = $("#content");
     //一覧読み込み
     $.ajax("data/memos.json").done((memos) => {
         memos.forEach(memo => {
             let elem = $(`<li>`)
             elem.addClass("menucontent");
             elem.append("<i>＃</i>");
+            elem.on("click", () => {
+                loadContent(memo.name);
+            })
             let p = $("<p>");
             p.text(memo.title);
             elem.append(p);
@@ -27,5 +31,11 @@
                 menulist.append(elem)
             }
         })
-    })
+    });
+    function loadContent(path) {
+        $.ajax("data/memos/" + path).done((contentStr) => {
+            let html = marked.parse(contentStr);
+            content.html(html);
+        });
+    }
 })();

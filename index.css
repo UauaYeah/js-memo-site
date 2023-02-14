@@ -14,14 +14,16 @@ body {
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+    overflow: hidden;
 }
 
 .menu {
     background-color: #2f3136;
 }
 
-.content {
-    background-color: #36393f;
+#content {
+    padding: 10px;
+    overflow-x: auto;
 }
 
 #menulist {
@@ -47,6 +49,7 @@ body {
 .menucontent>p {
     display: inline;
     margin: 0;
+    pointer-events: none;
 }
 
 .menucontent>i {
