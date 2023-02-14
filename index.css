@@ -1,4 +1,25 @@
+html,
 body {
     background-color: #36393f;
     color: #fff;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 250px 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.menu {
+    background-color: #2f3136;
+}
+
+.content {
+    background-color: #36393f;
 }
