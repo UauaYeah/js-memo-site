@@ -8,7 +8,7 @@ body {
 }
 
 @font-face {
-    src:url("gg.ttf");
+    src: url("gg.ttf");
     font-family: 'gg';
 }
 
@@ -77,4 +77,10 @@ summary {
     padding-top: -10px;
     user-select: none;
     cursor: pointer;
+}
+
+code {
+    background-color: #282c34;
+    padding: 8px;
+    border-radius: 5px;
 }
