@@ -36,7 +36,7 @@
                 menulist.append(elem)
             }
         })
-    });
+    }).catch(console.error);
     function loadContent(path) {
         $.ajax("data/memos/" + path).done((contentStr) => {
             let html = marked.parse(contentStr);
