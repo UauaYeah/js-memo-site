@@ -37,6 +37,12 @@
             }
         })
     }).catch(console.error);
+    marked.setOptions({
+        highlight: code => {
+            return hljs.highlightAuto(code).value
+        }
+    })
+
     function loadContent(path) {
         $.ajax("data/memos/" + path).done((contentStr) => {
             let html = marked.parse(contentStr);
