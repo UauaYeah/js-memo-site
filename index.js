@@ -38,8 +38,15 @@
         })
     }).catch(console.error);
     marked.setOptions({
-        highlight: code => {
-            return hljs.highlightAuto(code).value
+        langPrefix: "language-",
+        highlight: (code, lang) => {
+            if (lang && lang.match(":")) {
+                lang = lang.substring(0, lang.indexOf(":"));
+            }
+            if (lang in Prism.languages) {
+                return Prism.highlight(code, Prism.languages[lang]);
+            }
+            return code;
         }
     })
 

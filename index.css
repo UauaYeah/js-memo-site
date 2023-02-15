@@ -80,7 +80,7 @@ summary {
 }
 
 code {
-    background-color: #282c34;
+    background-color: #282c34 !important;
     padding: 8px;
     border-radius: 5px;
 }
