@@ -17,7 +17,7 @@ npm init -y
 次に、下記のようなコマンドを入力します
 
 ```js
-npm i discord.js v13
+npm i discord.js@v13
 ```
 
 このコマンドを実行することによって、discord.js v13がディレクトリにインストールされます。
